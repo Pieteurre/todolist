@@ -1,25 +1,7 @@
-<h1 class="h2-title">ToDo List</h1>
+<h1 class="h2-title">TODO List</h1>
 
-<div class="todo-input">
-  <form [formGroup]="myForm" (ngSubmit)="addTodo()">
-    <mat-form-field>
-      <input matInput placeholder="Nouvelle tâche" formControlName="name">
-    </mat-form-field>
-    <button type="submit"><mat-icon matSuffix class="add-icon">archive</mat-icon></button>
-  </form>
-  
-</div>
-
-<div *ngFor="let todo of todos">
-  <section class="checkbox-section">
-    <mat-checkbox class="checkbox" [(ngModel)]="checked">{{ todo.title }}</mat-checkbox>
-  </section>
-</div>
-
-<mat-selection-list #idk>
-    <mat-list-option *ngFor="let name of names">
-      {{name}}
-    </mat-list-option>
+<mat-selection-list #selectionlist>
+  <mat-list-option *ngFor="let name of names">
+    {{name}}
+  </mat-list-option>
 </mat-selection-list>
-
-<!--<router-outlet></router-outlet>-->

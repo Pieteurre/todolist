@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { FormGroup, FormControl} from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -9,13 +8,4 @@ import { FormGroup, FormControl} from '@angular/forms';
 
 export class AppComponent {
   names: string[] = ['mock', 'test', 'todo'];
-
-  myForm = new FormGroup({
-    name: new FormControl()
- });
-
-  addTodo() {
-    console.log(this.myForm.value);
-    this.names.push(this.myForm.value);
-  }
 }
