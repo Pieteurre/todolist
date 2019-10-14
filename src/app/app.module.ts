@@ -6,11 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import {} from '@angular/material/form-field';
-import {} from '@angular/material/input';
-import {} from '@angular/material/button';
-import {} from '@angular/material/icon';
-import {} from '@angular/material/list';
 import {
   MatFormFieldModule,
   MatInputModule,
@@ -18,7 +13,8 @@ import {
   MatIconModule,
   MatCheckboxModule,
   MatListModule,
-  MatTableModule
+  MatTableModule,
+  MatTooltipModule
 } from '@angular/material';
 
 @NgModule({
@@ -38,7 +34,8 @@ import {
     FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatTableModule
+    MatTableModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
